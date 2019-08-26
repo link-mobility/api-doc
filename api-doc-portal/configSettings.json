@@ -1,0 +1,36 @@
+{
+    "Environment": "Prod",
+
+    "Apis": [
+          {
+              "id": "1",
+              "apiName": "Mobile Invoice Api",
+              "gettingStartedUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/MobileInvoiceAPI/GettingStarted.md",
+              "swaggerJsonUrl": "https://pay-core.linkmobility.com/swagger/docs/V2",
+              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/MobileInvoiceAPI/Samples.md",
+              "featuresUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/MobileInvoiceAPI/Features.md",
+              "overviewUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/MobileInvoiceAPI/Overview.md"
+          },
+          {
+              "id": "2",
+              "apiName": "Link SMS REST API (Send)",
+              "gettingStartedUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/GettingStarted.md",
+              "swaggerJsonUrl": "",
+              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/samples.md",
+              "featuresUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/Features.md",
+              "overviewUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/Overview.md"
+          },
+          {
+              "id": "3",
+              "apiName": "Link SMS REST API (Receive)",
+              "gettingStartedUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/GettingStarted.md",
+              "swaggerJsonUrl": "",
+              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/samples.md",
+              "featuresUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/features.md",
+              "overviewUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/Overview.md"
+          }
+
+
+    ]
+}
+
