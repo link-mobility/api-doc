@@ -1,6 +1,4 @@
 {
-    "Environment": "Prod",
-
     "Apis": [
           {
               "id": "1",
