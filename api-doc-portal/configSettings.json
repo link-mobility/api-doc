@@ -14,7 +14,7 @@
               "apiName": "Link SMS REST API (Send)",
               "gettingStartedUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/GettingStarted.md",
               "swaggerJsonUrl": "",
-              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/samples.md",
+              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/Samples.md",
               "featuresUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/Features.md",
               "overviewUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Send)/Overview.md"
           },
@@ -23,8 +23,8 @@
               "apiName": "Link SMS REST API (Receive)",
               "gettingStartedUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/GettingStarted.md",
               "swaggerJsonUrl": "",
-              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/samples.md",
-              "featuresUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/features.md",
+              "samplesUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/Samples.md",
+              "featuresUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/Features.md",
               "overviewUrl": "https://raw.githubusercontent.com/link-mobility/api-doc/master/LinkSmsRestApi(Receive)/Overview.md"
           }
 
