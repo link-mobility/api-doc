@@ -32,3 +32,4 @@
 
 <a id="markdown-mobile-invoice-basic-sequence" name="mobile-invoice-basic-sequence"></a>
 # Mobile Invoice basic sequence
+![Mobile Invoice basic sequence](images/flowchart.png)
