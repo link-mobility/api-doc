@@ -37,8 +37,19 @@ The LINK Payment system is integrated with several payment gateways, and is cont
 
 <a id="markdown-pretransaction" name="pretransaction"></a>
 ## PreTransaction
-Description  here
+In short, pre-transaction is the format of a invoice.
+The **POST/pre-transaction** API method is the method that creates and distributes the actual Mobile Invoice.
+The pre-transaction consist of all necessary information for the service to create and populate both the delivery part of Mobile Invoice, as well as the landing page that the end user/recipient is viewing.
+```
+View the API resource to learn more about pre-transaction content.
+```
+When an end user initiates the payment process, a transaction is created.
 
 <a id="markdown-transaction" name="transaction"></a>
 ## Transaction
-Description  here
+Transactions are the actual payments that have been set up with an amount and a payment method from the payment selection page and are ready to be processed. Further processing happens on a PSP page requiring some more information about the payment itself.
+
+```
+For more information on transaction endpoints see the API resource.
+```
+
