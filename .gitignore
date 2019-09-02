@@ -272,3 +272,4 @@ Common.PaymentCore.Web.UITests/chrome-win32/
 
 #python sample
 LinkSmsRestApi(Send)/Samples/python/server_settings.txt
+.vscode/
