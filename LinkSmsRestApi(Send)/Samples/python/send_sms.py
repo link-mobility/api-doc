@@ -22,16 +22,16 @@ class SmsSender(object):
         self.auth = HTTPBasicAuth(config['username'], config['password'])
         self.msisdns = msisdns
 
-    def do_request(self, path, data):
+    def do_send(self, data):
         if not self.dry_run:
-            response = post(self.server_url + path, json=data, auth=self.auth)
+            response = post(self.server_url + '/send', json=data, auth=self.auth)
             print(response.json())
         else:
             print('### Dry run (override to do real request using -n)')
-            print(f'Request would be: POST {self.server_url + path}\nBody: {data}')
+            print(f'Request would be: POST {self.server_url}/send\nBody: {data}')
 
     def send_single_sms(self):
-        self.do_request('/send', {
+        self.do_send({
             "source": "LINK",
             "destination": self.msisdns[0],
             "userData": "Hello, this is a single test message.",
@@ -40,10 +40,29 @@ class SmsSender(object):
             "useDeliveryReport": False})
 
     def send_bulk_sms(self):
-        pass
+        for idx, phone in enumerate(self.msisdns):
+            self.do_send({
+                "source": "LINK",
+                "destination": phone,
+                "userData": f"Hello, this is batch test message number {idx + 1}.",
+                "platformId": self.platformId,
+                "platformPartnerId": self.platformPartnerId,
+                "useDeliveryReport": False
+                })
 
     def send_payment_sms(self):
-        pass
+        self.do_send({
+            "source": "LINK",
+            "destination": self.msisdns[0],
+            "userData": "This message costs 1 NOK to receive.",
+            "tariff": 100,
+            "currency": "NOK",
+            "platformId": self.platformId,
+            "platformPartnerId": self.platformPartnerId,
+            "productDescription": "Subnummer cpa test 1kr",
+            "productCategory": 19,
+            "useDeliveryReport": False
+        })
 
     def execute(self, command):
         commands = {
@@ -63,7 +82,7 @@ def main():
                         help='Available commands: %(choices)s')
     parser.add_argument('msisdns',
                         nargs='+',
-                        metavar='MSISDNS',
+                        metavar='MSISDN',
                         help='One or more MSISDNs to test sending with')
     parser.add_argument('-n', '--no-dry-run', action='store_false', dest='dry_run')
 
