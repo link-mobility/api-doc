@@ -4,8 +4,8 @@
 
 Language | Url 
  --- | --- 
-C# | [HMAC sample c#](Samples/hmacSampleCsharp.cs)
-Java | [HMAC sample java](Samples/hmacSampleJava.java)
+C# | [HMAC sample c#](Samples/hmacSampleCsharp.md)
+Java | [HMAC sample java](Samples/hmacSampleJava.md)
 
 ## Create PreTransaction
 Language | Url 

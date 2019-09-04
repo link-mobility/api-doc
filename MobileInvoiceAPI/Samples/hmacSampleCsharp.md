@@ -1,3 +1,5 @@
+```csharp
+
 namespace Common.HttpClient
 {
 
@@ -88,3 +90,5 @@ namespace Common.HttpClient
 		}
 	}
 }
+
+```
