@@ -13,7 +13,8 @@ Language | Url
 C# | [Runnable linqpad c# sample](Samples/CreatePreTransaction_linqpad.md)
 
 ## Downloads
-[SDK Client](downloads/payment-core-client.zip)
+[Old java SDK Client](downloads/payment-core-client.zip)
+(Needs some help)
 
 
 
