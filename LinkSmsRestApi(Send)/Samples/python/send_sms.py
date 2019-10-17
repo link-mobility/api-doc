@@ -3,7 +3,6 @@
 import json
 import os
 from argparse import ArgumentParser
-from collections import namedtuple
 from pathlib import Path
 
 from requests import post
@@ -48,7 +47,7 @@ class SmsSender(object):
                 "platformId": self.platformId,
                 "platformPartnerId": self.platformPartnerId,
                 "useDeliveryReport": False
-                })
+            })
 
     def send_payment_sms(self):
         self.do_send({
@@ -66,9 +65,9 @@ class SmsSender(object):
 
     def execute(self, command):
         commands = {
-        'send': self.send_single_sms,
-        'send_bulk': self.send_bulk_sms,
-        'send_payment': self.send_payment_sms
+            'send': self.send_single_sms,
+            'send_bulk': self.send_bulk_sms,
+            'send_payment': self.send_payment_sms
         }
         commands[command]()
 
@@ -87,7 +86,6 @@ def main():
     parser.add_argument('-n', '--no-dry-run', action='store_false', dest='dry_run')
 
     args = parser.parse_args()
-
 
     try:
         with open(basedir / 'server_settings.json') as server_settings:
