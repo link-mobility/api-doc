@@ -269,3 +269,7 @@ App_Data
 *.exe
 Common.PaymentCore.Web.UITests/chrome-win32/
 /src/PaymentHandler.Interfaces
+
+#python sample
+LinkSmsRestApi(Send)/Samples/python/server_settings.json
+.vscode/
